@@ -1,0 +1,58 @@
+.md-typeset .grid {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-gap: 1rem;
+    margin: 1em 0;
+}
+
+.md-typeset .grid.cards > :is(ul, ol) {
+    display: contents;
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li,
+.md-typeset .grid > .card {
+    border: .05rem solid var(--md-default-fg-color--lightest);
+    border-radius: .1rem;
+    display: block;
+    margin: 0;
+    padding: .8rem;
+    transition: border .25s,box-shadow .25s;
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li:focus-within,
+.md-typeset .grid.cards > :is(ul, ol) > li:hover,
+.md-typeset .grid > .card:focus-within,
+.md-typeset .grid > .card:hover {
+    border-color: transparent;
+    box-shadow: var(--md-shadow-z2);
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li > hr,
+.md-typeset .grid > .card > hr {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li > :first-child,
+.md-typeset .grid > .card > :first-child {
+    margin-top: 0;
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li > :last-child,
+.md-typeset .grid > .card > :last-child {
+    margin-bottom: 0;
+}
+
+.md-typeset .grid > * {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.md-typeset .grid > :is(h1,h2,h3,h4,h5,h6) {
+    grid-column: 1/-1;
+    margin-bottom: 1rem;
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li > :only-child {
+    margin-bottom: 0;
+    margin-top: 0;
+}
