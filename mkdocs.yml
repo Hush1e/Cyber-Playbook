@@ -1,15 +1,15 @@
 # Project information
 site_name: 'Cyber Playbook'
 site_description: 'Playbooks are used by cybersecurity professionals to store or encapsulate knowledge on cybersecurity topics and tactics.'
-site_author: 'Randy Rowland'
-site_url: 'https://rowland007.github.io/Cyber-Playbook/'
+site_author: 'Hush1e'
+site_url: 'https://hush1e.github.io/Cyber-Playbook/'
 
 # Repository
-repo_name: 'Randy Rowland'
-repo_url: 'https://github.com/rowland007/'
+repo_name: 'Hush1e'
+repo_url: 'https://github.com/Hush1e/Cyber-Playbook'
 
 # Copyright
-copyright: 'Copyright &copy; 2021-2024 Randall Rowland<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+copyright: 'Copyright &copy; 2024-2025 Hush1e<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
 
 # Navigation Menu
 nav:
