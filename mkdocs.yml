@@ -5,8 +5,35 @@ site_author: 'Hush1e'
 site_url: 'https://hush1e.github.io/Cyber-Playbook/'
 
 # Repository
-repo_name: 'Hush1e'
+repo_name: 'Hush1e/Cyber-Playbook'
 repo_url: 'https://github.com/Hush1e/Cyber-Playbook'
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - content.tabs.link
+    - content.code.copy
+  icon:
+    admonition:
+      cite: octicons/link-external-16
 
 # Copyright
 copyright: 'Copyright &copy; 2024-2025 Hush1e<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
