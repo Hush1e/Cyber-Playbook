@@ -14,12 +14,16 @@ theme:
   custom_dir: overrides
   palette:
     - scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/lightbulb
+        icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/lightbulb-outline
+        icon: material/brightness-4
         name: Switch to light mode
   font:
     text: Roboto
@@ -29,108 +33,89 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.share
     - content.tabs.link
     - content.code.copy
   icon:
     admonition:
       cite: octicons/link-external-16
+  logo: static/images/logo.png
+  favicon: static/images/favicon.png
 
 # Copyright
 copyright: 'Copyright &copy; 2024-2025 Hush1e<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
 
 # Navigation Menu
 nav:
-    - Overview: 'index.md'
-    - Approach: 'overview/approaches.md'
-    - Component Security:
-        'Overview': 'component/index.md'
-        'Yubikey for GPG': 'component/yubikey.md'
-    - Connection Security:
-        'Overview': 'connection/index.md'
-        'IPv4 Subnets': 'connection/ip4-subnets.md'
-        'IPv6 References': 'connection/ip6-references.md'
-        'VPNs': 'connection/vpn.md'
-        'nzyme | WiFi Defense System': 'connection/nzyme.md'
-        'CrowdSec Collaborative IPS': 'connection/crowdsec.md'
-    - Data  Security:
-        'Overview': 'data/index.md'
-        'Data Management Life Cycle': 'data/data-manage-life.md'
-        'Data Classification': 'data/data-classification.md'
-        'Techniques, Tactics and Procedures': 'data/ttp.md'
-    - Human Factors:
-        'Overview': 'human/index.md'
-        'Access Control Models': 'human/controls.md'
-        'Mindful Emotion Awareness': 'human/mindful.md'
-    - Organizational Security:
-        'Overview': 'organizational/index.md'
-        'Risk Matrix': 'organizational/risk.md'
-        'Policy Implementation': 'organizational/policy-implementation.md'
-        'A Common Language for Computer Security Incidents': 'organizational/common-language-for-computer-security-incidents.md'
-        'Creating a Cybersecurity Strategy': 'organizational/cybersecurity-strategy.md'
-        'Cyber Threat Intelligence': 'organizational/cti.md'
-        'Incident Response Tracker': 'organizational/incident-response.md'
-        'Yubico Logins Overview': 'organizational/yubico/index.md'
-        'YubiKey Smart Card Deployment Guide': 'organizational/yubico/smart-card-deployment.md'
-        'Yubico Login for Windows Configuration Guide': 'organizational/yubico/windows-config-guide.md'
-    - Societal Security:
-        'Overview': 'societal/index.md'
-        'The Six Dumbest Ideas in Computer Security': 'societal/six-dumb-ideas.md'
-    - Software Security:
-        'Overview': 'software/index.md'
-        'OWASP Top 10 Proactive Controls': 'software/owasp-top-ten-pro-cntrls.md'
-        'Supply Chain Levels for Software Artifacts': 'software/slsa.md'
-    - System Security:
-        'Overview': 'system/index.md'
-        'CIS Controls': 'system/cis-controls.md'
-        'PowerShell Example Scripts': 'system/ps-sample-scripts.md'
-        'Protecting CUI': 'system/nist-800-18.md'
-        'OWASP Best Practices: Use of WAF': 'system/owasp-waf.md'
-        '10 Things Auditors Should Know': 'system/10-things-auditors.md'
-    - Glossary: 
-        'Cybersecurity Terms': 'glossary.md'
-        'Basic Cryptography': 'cryptography.md'
-        'Basic Scripting and Programming': 'programming.md'
-        'Policy and Compliance': 'compliance.md'
-        'Privacy': 'privacy.md'
-    - Appendix 1 - Resources: 'resources.md'
-    - Appendix 2 - Quick Reference Guide: 'quick-reference.md'
-
-# Configuration
-theme:
-  name: material
-  custom_dir: overrides
-  palette:
-    - scheme: default
-      toggle:
-        icon: material/lightbulb
-        name: Switch to dark mode
-    - scheme: slate
-      toggle:
-        icon: material/lightbulb-outline
-        name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
-  icon:
-    admonition:
-      cite: octicons/link-external-16
-  logo: static/images/logo.png
-  favicon: static/images/favicon.png
+  - Overview: index.md
+  - Approach: overview/approaches.md
+  - Component Security:
+      - Overview: component/index.md
+      - Yubikey for GPG: component/yubikey.md
+  - Connection Security:
+      - Overview: connection/index.md
+      - IPv4 Subnets: connection/ip4-subnets.md
+      - IPv6 References: connection/ip6-references.md
+      - VPNs: connection/vpn.md
+      - nzyme | WiFi Defense System: connection/nzyme.md
+      - CrowdSec Collaborative IPS: connection/crowdsec.md
+  - Data Security:
+      - Overview: data/index.md
+      - Data Management Life Cycle: data/data-manage-life.md
+      - Data Classification: data/data-classification.md
+      - Techniques, Tactics and Procedures: data/ttp.md
+  - Human Factors:
+      - Overview: human/index.md
+      - Access Control Models: human/controls.md
+      - Mindful Emotion Awareness: human/mindful.md
+  - Organizational Security:
+      - Overview: organizational/index.md
+      - Risk Matrix: organizational/risk.md
+      - Policy Implementation: organizational/policy-implementation.md
+      - A Common Language for Computer Security Incidents: organizational/common-language-for-computer-security-incidents.md
+      - Creating a Cybersecurity Strategy: organizational/cybersecurity-strategy.md
+      - Cyber Threat Intelligence: organizational/cti.md
+      - Incident Response Tracker: organizational/incident-response.md
+      - Yubico Logins Overview: organizational/yubico/index.md
+      - YubiKey Smart Card Deployment Guide: organizational/yubico/smart-card-deployment.md
+      - Yubico Login for Windows Configuration Guide: organizational/yubico/windows-config-guide.md
+  - Societal Security:
+      - Overview: societal/index.md
+      - The Six Dumbest Ideas in Computer Security: societal/six-dumb-ideas.md
+  - Software Security:
+      - Overview: software/index.md
+      - OWASP Top 10 Proactive Controls: software/owasp-top-ten-pro-cntrls.md
+      - Supply Chain Levels for Software Artifacts: software/slsa.md
+  - System Security:
+      - Overview: system/index.md
+      - CIS Controls: system/cis-controls.md
+      - PowerShell Example Scripts: system/ps-sample-scripts.md
+      - Protecting CUI: system/nist-800-18.md
+      - OWASP Best Practices: Use of WAF: system/owasp-waf.md
+      - 10 Things Auditors Should Know: system/10-things-auditors.md
+  - Glossary:
+      - Cybersecurity Terms: glossary.md
+      - Basic Cryptography: cryptography.md
+      - Basic Scripting and Programming: programming.md
+      - Policy and Compliance: compliance.md
+      - Privacy: privacy.md
+  - Appendix 1 - Resources: resources.md
+  - Appendix 2 - Quick Reference Guide: quick-reference.md
 # Customization
 extra:
   social:
-    - icon: material/cloud
-      link: https://randyrowland.me
     - icon: fontawesome/brands/github
-      link: https://github.com/rowland007
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/randall-rowland-jr
-    - icon: fontawesome/brands/reddit-alien
-      link: https://www.reddit.com/user/rowland007
+      link: https://github.com/Hush1e
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
 
 # Extensions
 markdown_extensions:
   - abbr
+  - attr_list
   - pymdownx.critic
   - pymdownx.caret
   - md_in_html
@@ -139,7 +124,6 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.arithmatex:
       generic: true
-  - attr_list
   - tables
   - pymdownx.snippets
   - admonition
@@ -149,9 +133,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.superfences:
       custom_fences:
-          - name: mermaid
-            class: mermaid
-            format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - def_list
@@ -161,6 +145,16 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - toc:
+      permalink: true
+  - meta
+
+extra_css:
+  - stylesheets/extra.css
+
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
